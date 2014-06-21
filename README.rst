@@ -18,6 +18,8 @@ Sample usage::
 
     # models.py
 
+    from async_cache.descriptors import async_cache_property
+
     class Article(models.Model):
 
         title = models.CharField(max_length=255)
