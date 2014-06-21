@@ -1,5 +1,5 @@
 django-async-cache-property
-======================
+=============================
 
 Purpose
 ----------
@@ -8,16 +8,11 @@ Create REST API instantly with Django in less than 5min.
 
 Installation
 -------------
-```bash
-pip install django-async-cache-property
-```
+    pip install django-async-cache-property
+
 
 Usage
 ---------
-
-
-```python
-
 
     # models.py
 
@@ -48,14 +43,12 @@ Usage
             seconds = int(time.time()) - 1134028003
             return round(order + sign * seconds / 45000, 7)
 
-```
 
 Customise
 -------------
 
-```python
-@async_cache_property(soft_ttl=60*10, timeout=60 * 60, callback_task=mytask)
-```
+    @async_cache_property(soft_ttl=60*10, timeout=60 * 60, callback_task=mytask)
+
 
 - soft_ttl: after this time, the cache should be invalidated
 - timeout: timeout of key in your cache backend, this prevents us serving super stale data
