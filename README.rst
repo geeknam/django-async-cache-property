@@ -3,8 +3,9 @@ django-async-cache-property
 
 Purpose
 ----------
-Need to have a prototype REST API for testing with your mobile app?
-Create REST API instantly with Django in less than 5min.
+A caching descriptor that refreshes stale cache items asynchronously using a Celery task.
+The key idea being that it's better to serve a stale item (and populate the cache asynchronously) than block
+the user in order to populate the cache synchronously.
 
 Installation
 -------------
