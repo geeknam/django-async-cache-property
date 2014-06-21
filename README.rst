@@ -13,6 +13,7 @@ Installation
 
 Usage
 ---------
+Sample usage::
 
     # models.py
 
@@ -44,8 +45,7 @@ Usage
             return round(order + sign * seconds / 45000, 7)
 
 
-Customise
--------------
+Custmisation::
 
     @async_cache_property(soft_ttl=60*10, timeout=60 * 60, callback_task=mytask)
 
